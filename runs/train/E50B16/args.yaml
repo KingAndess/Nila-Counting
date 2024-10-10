@@ -1,7 +1,7 @@
 task: detect
 mode: train
-model: yolov10n.pt
-data: Nila-Counting-2/data.yaml
+model: /kaggle/working/Nila-Counting/yolov10n.pt
+data: /kaggle/input/dataset/Nila-Counting-2/data.yaml
 epochs: 50
 time: null
 patience: 100
@@ -12,8 +12,8 @@ save_period: -1
 cache: false
 device: null
 workers: 8
-project: runs/train
-name: exp12
+project: runs
+name: E50B16
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -98,9 +98,10 @@ bgr: 0.0
 mosaic: 1.0
 mixup: 0.0
 copy_paste: 0.0
+copy_paste_mode: flip
 auto_augment: randaugment
 erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: runs/train/exp12
+save_dir: runs/E50B16
